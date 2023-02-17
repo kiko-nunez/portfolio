@@ -2,4 +2,4 @@
 
 ## Deployed
 
-[Portfolio](https://portfolio-kpzrxmpbe-kiko-nunez.vercel.app)
+[Portfolio](https://portfolio-kiko-nunez.vercel.app/)
