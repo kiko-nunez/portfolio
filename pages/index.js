@@ -58,19 +58,14 @@ export default function Home() {
           </div>
         </section>
         <section className="font-burtons">
-          <h2 className="text-center text-4xl py-1">About Me</h2>
+          <h2 className="text-center text-4xl py-1 mt-4">About Me</h2>
           <p className="text-center text-xl font-burtons font-semibold shadow-lg">
             Welcome to my website! I'm Kiko, a full-stack software developer and a sustainability
             enthusiast. With over five years of experience in the renewables
             industry, I'm committed to developing digital tools that make a
             positive impact on the world. As a problem solver and a
-            collaborator, I bring a can-do attitude and a unique blend of
-            technical expertise and real-world experience to every project I
-            work on. I'm excited about the potential of technology to tackle the
-            most pressing challenges facing our society today, and I'm always
-            looking for new and exciting opportunities to put my skills to the
-            test. Thanks for checking out my profile, and I hope to work
-            together soon! 
+            collaborator, I bring technical expertise and real-world experience to every project I
+            work on.
           </p>
           <br></br>
         </section>
@@ -81,41 +76,37 @@ export default function Home() {
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
               <h3 className="text-3xl py-1">Project 1</h3>
               <p className="text-xl py-2 leading-8 text-white-800">
-                <Image src={project1} />
+                <a href="https://kiko-nunez.github.io/anime-quote-generator/"><Image src={project1} className="hover:transform hover:scale-110"/></a>
               </p>
               <p className="py-1">Languages</p>
               <p className="py-1">Description</p>
-              <p className="py-1">Link</p>
             </div>
 
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
               <h3 className="text-3xl py-1">Project 2</h3>
               <p className="text-xl py-2 leading-8 text-white-800">
-                <Image src={project2} />
+                <a href="https://open-source-apparel.herokuapp.com/"><Image src={project2} className="hover:transform hover:scale-110" /></a>
               </p>
               <p className="py-1">Languages</p>
               <p className="py-1">Description</p>
-              <p className="py-1">Link</p>
             </div>
 
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
               <h3 className="text-3xl py-1">Project 3</h3>
               <p className="text-xl py-2 leading-8 text-white-800">
-                <Image src={project3} />
+                <a href="https://cheezus.netlify.app"><Image src={project3} className="hover:transform hover:scale-110" /></a>
               </p>
               <p className="py-1">Languages</p>
               <p className="py-1">Description</p>
-              <p className="py-1">Link</p>
             </div>
 
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
               <h3 className="text-3xl py-1">Project 4</h3>
               <p className="text-xl py-2 leading-8 text-white-800">
-                <Image src={project4} />
+                <a href="https://powerup.herokuapp.com/"><Image src={project4} className="hover:transform hover:scale-110" /></a>
               </p>
               <p className="py-1">Languages</p>
               <p className="py-1">Description</p>
-              <p className="py-1">Link</p>
             </div>
           </div>
           <section>
