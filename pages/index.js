@@ -19,8 +19,13 @@ export default function Home() {
       </Head>
       <main>
         <section className="bg-blue-900 min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons">Kiko Nunez Portfolio</h1>
+          <nav className="py-5 mt-0 flex justify-between">
+            <ul className="text-xl font-burtons mt-0">
+              <li className="list-none flex ">Home</li>
+              <li className="list-none flex ">Projects</li>
+              <li className="list-none flex ">About Me</li>
+              <li className="list-none flex ">Contact</li>
+            </ul>
             <ul className="list-none flex items-center">
               <li>
                 <BsFillMoonStarsFill className="cursor-pointer text-2xl" />
@@ -36,8 +41,8 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium">
+          <div className="text-center p-0">
+            <h2 className="text-5xl py-0 text-green-200 font-burtons font-extrabold">
               Kiko Nunez
             </h2>
             <h3 className="text-2xl py-2">Software Developer</h3>
@@ -58,8 +63,8 @@ export default function Home() {
           </div>
         </section>
         <section className="font-burtons">
-          <h2 className="text-center text-4xl py-1 mt-4">About Me</h2>
-          <p className="text-center text-xl font-burtons font-semibold shadow-lg">
+          <h2 className="text-center text-4xl py-1 mt-4 ">About Me</h2>
+          <p className="text-center text-2xl font-burtons font-semibold shadow-lg text-green-200">
             Welcome to my website! I'm Kiko, a full-stack software developer and a sustainability
             enthusiast. With over five years of experience in the renewables
             industry, I'm committed to developing digital tools that make a
