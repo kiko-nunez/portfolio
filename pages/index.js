@@ -65,7 +65,7 @@ export default function Home() {
             </a>
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 mt-20 overflow-hidden">
-            <Image src={pfp} layout="fill" />
+            <Image alt="" src={pfp} layout="fill" />
           </div>
         </section>
         <section className="font-burtons">
@@ -89,6 +89,7 @@ export default function Home() {
               <p className="text-xl py-2 leading-8 text-white-800">
                 <a href="https://kiko-nunez.github.io/anime-quote-generator/">
                   <Image
+                    alt=""
                     src={project1}
                     className="hover:transform hover:scale-110"
                   />
@@ -103,6 +104,7 @@ export default function Home() {
               <p className="text-xl py-2 leading-8 text-white-800">
                 <a href="https://open-source-apparel.herokuapp.com/">
                   <Image
+                    alt=""
                     src={project2}
                     className="hover:transform hover:scale-110"
                   />
@@ -117,6 +119,7 @@ export default function Home() {
               <p className="text-xl py-2 leading-8 text-white-800">
                 <a href="https://cheezus.netlify.app">
                   <Image
+                    alt=""
                     src={project3}
                     className="hover:transform hover:scale-110"
                   />
@@ -131,6 +134,7 @@ export default function Home() {
               <p className="text-xl py-2 leading-8 text-white-800">
                 <a href="https://powerup.herokuapp.com/">
                   <Image
+                    alt=""
                     src={project4}
                     className="hover:transform hover:scale-110"
                   />
