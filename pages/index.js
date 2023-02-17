@@ -20,7 +20,7 @@ export default function Home() {
       <main>
         <section className="bg-blue-900 min-h-screen">
           <nav className="py-5 mt-0 flex justify-between">
-            <ul className="text-xl font-burtons mt-0">
+            <ul className="text-xl font-burtons mt-0 pl-3">
               <li className="list-none flex ">Home</li>
               <li className="list-none flex ">Projects</li>
               <li className="list-none flex ">About Me</li>
@@ -33,7 +33,7 @@ export default function Home() {
               <li>
                 <a
                   href="#"
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-lg ml-8"
+                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-lg ml-8 mr-3"
                 >
                   {" "}
                   Resume{" "}
@@ -51,10 +51,16 @@ export default function Home() {
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3">
-            <a href="https://linkedin.com/in/kiko-nunez">
+            <a
+              href="https://linkedin.com/in/kiko-nunez"
+              className="hover:transform hover:scale-150"
+            >
               <AiFillLinkedin />
             </a>
-            <a href="https://github.com/kiko-nunez">
+            <a
+              href="https://github.com/kiko-nunez"
+              className="hover:transform hover:scale-150"
+            >
               <AiFillGithub />
             </a>
           </div>
@@ -65,12 +71,12 @@ export default function Home() {
         <section className="font-burtons">
           <h2 className="text-center text-4xl py-1 mt-4 ">About Me</h2>
           <p className="text-center text-2xl font-burtons font-semibold shadow-lg text-green-200">
-            Welcome to my website! I'm Kiko, a full-stack software developer and a sustainability
-            enthusiast. With over five years of experience in the renewables
-            industry, I'm committed to developing digital tools that make a
-            positive impact on the world. As a problem solver and a
-            collaborator, I bring technical expertise and real-world experience to every project I
-            work on.
+            Welcome to my website! I'm Kiko, a full-stack software developer and
+            a sustainability enthusiast. With over five years of experience in
+            the renewables industry, I'm committed to developing digital tools
+            that make a positive impact on the world. As a problem solver and a
+            collaborator, I bring technical expertise and real-world experience
+            to every project I work on.
           </p>
           <br></br>
         </section>
@@ -81,7 +87,12 @@ export default function Home() {
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
               <h3 className="text-3xl py-1">Project 1</h3>
               <p className="text-xl py-2 leading-8 text-white-800">
-                <a href="https://kiko-nunez.github.io/anime-quote-generator/"><Image src={project1} className="hover:transform hover:scale-110"/></a>
+                <a href="https://kiko-nunez.github.io/anime-quote-generator/">
+                  <Image
+                    src={project1}
+                    className="hover:transform hover:scale-110"
+                  />
+                </a>
               </p>
               <p className="py-1">Languages</p>
               <p className="py-1">Description</p>
@@ -90,7 +101,12 @@ export default function Home() {
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
               <h3 className="text-3xl py-1">Project 2</h3>
               <p className="text-xl py-2 leading-8 text-white-800">
-                <a href="https://open-source-apparel.herokuapp.com/"><Image src={project2} className="hover:transform hover:scale-110" /></a>
+                <a href="https://open-source-apparel.herokuapp.com/">
+                  <Image
+                    src={project2}
+                    className="hover:transform hover:scale-110"
+                  />
+                </a>
               </p>
               <p className="py-1">Languages</p>
               <p className="py-1">Description</p>
@@ -99,7 +115,12 @@ export default function Home() {
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
               <h3 className="text-3xl py-1">Project 3</h3>
               <p className="text-xl py-2 leading-8 text-white-800">
-                <a href="https://cheezus.netlify.app"><Image src={project3} className="hover:transform hover:scale-110" /></a>
+                <a href="https://cheezus.netlify.app">
+                  <Image
+                    src={project3}
+                    className="hover:transform hover:scale-110"
+                  />
+                </a>
               </p>
               <p className="py-1">Languages</p>
               <p className="py-1">Description</p>
@@ -108,7 +129,12 @@ export default function Home() {
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
               <h3 className="text-3xl py-1">Project 4</h3>
               <p className="text-xl py-2 leading-8 text-white-800">
-                <a href="https://powerup.herokuapp.com/"><Image src={project4} className="hover:transform hover:scale-110" /></a>
+                <a href="https://powerup.herokuapp.com/">
+                  <Image
+                    src={project4}
+                    className="hover:transform hover:scale-110"
+                  />
+                </a>
               </p>
               <p className="py-1">Languages</p>
               <p className="py-1">Description</p>
