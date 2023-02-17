@@ -71,9 +71,9 @@ export default function Home() {
         <section className="font-burtons">
           <h2 className="text-center text-4xl py-1 mt-4 ">About Me</h2>
           <p className="text-center text-2xl font-burtons font-semibold shadow-lg text-green-200">
-            Welcome to my website! I'm Kiko, a full-stack software developer and
+            Welcome to my website! I&#39am Kiko, a full-stack software developer and
             a sustainability enthusiast. With over five years of experience in
-            the renewables industry, I'm committed to developing digital tools
+            the renewables industry, I am committed to developing digital tools
             that make a positive impact on the world. As a problem solver and a
             collaborator, I bring technical expertise and real-world experience
             to every project I work on.
@@ -146,52 +146,59 @@ export default function Home() {
           </div>
           <section>
             <div>
-            <h2 className="text-center text-4xl py-1 mt-4 ">Contact</h2>
+              <h2 className="text-center text-4xl py-1 mt-4 ">Contact</h2>
 
-            <form class="max-w-lg mx-auto p-4">
-            <div className="mb-4">
-  <label className="block text-white-700 font-bold mb-2" htmlFor="name">
-    Name
-  </label>
-  <input
-    className="appearance-none border rounded w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline"
-    id="name"
-    type="text"
-    placeholder="Enter your name"
-  />
-</div>
-<div className="mb-4">
-  <label className="block text-white-700 font-bold mb-2" htmlFor="email">
-    Email
-  </label>
-  <input
-    className="appearance-none border rounded w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline"
-    id="email"
-    type="email"
-    placeholder="Enter your email address"
-  />
-</div>
-<div className="mb-4">
-  <label className="block text-white-700 font-bold mb-2" htmlFor="message">
-    Message
-  </label>
-  <textarea
-    className="appearance-none border rounded w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline"
-    id="message"
-    placeholder="Enter your message"
-  ></textarea>
-</div>
-<div className="flex items-center justify-center">
-  <button
-    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-    type="button"
-  >
-    Send
-  </button>
-</div>
-
-</form>
-
+              <form class="max-w-lg mx-auto p-4">
+                <div className="mb-4">
+                  <label
+                    className="block text-white-700 font-bold mb-2"
+                    htmlFor="name"
+                  >
+                    Name
+                  </label>
+                  <input
+                    className="appearance-none border rounded w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="name"
+                    type="text"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div className="mb-4">
+                  <label
+                    className="block text-white-700 font-bold mb-2"
+                    htmlFor="email"
+                  >
+                    Email
+                  </label>
+                  <input
+                    className="appearance-none border rounded w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="email"
+                    type="email"
+                    placeholder="Enter your email address"
+                  />
+                </div>
+                <div className="mb-4">
+                  <label
+                    className="block text-white-700 font-bold mb-2"
+                    htmlFor="message"
+                  >
+                    Message
+                  </label>
+                  <textarea
+                    className="appearance-none border rounded w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="message"
+                    placeholder="Enter your message"
+                  ></textarea>
+                </div>
+                <div className="flex items-center justify-center">
+                  <button
+                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    type="button"
+                  >
+                    Send
+                  </button>
+                </div>
+              </form>
             </div>
           </section>
         </section>
