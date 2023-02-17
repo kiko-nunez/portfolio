@@ -70,7 +70,7 @@ export default function Home() {
         </section>
         <section className="font-burtons">
           <h2 className="text-center text-4xl py-1 mt-4 ">About Me</h2>
-          <p className="text-center text-2xl font-burtons font-semibold shadow-lg text-green-200">
+          <p className="text-center text-2xl font-burtons font-semibold shadow-lg text-green-200 mx-5">
             Welcome to my website! I&apos;m Kiko, a full-stack software developer and
             a sustainability enthusiast. With over five years of experience in
             the renewables industry, I&apos;m committed to developing digital tools
