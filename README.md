@@ -2,4 +2,4 @@
 
 ## Deployed
 
-[Vercel Deployment](portfolio-rflgw4git-kiko-nunez.vercel.app)
+[Vercel Deployment](portfolio-kiko-nunez.vercel.app)
