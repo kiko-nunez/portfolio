@@ -71,9 +71,9 @@ export default function Home() {
         <section className="font-burtons">
           <h2 className="text-center text-4xl py-1 mt-4 ">About Me</h2>
           <p className="text-center text-2xl font-burtons font-semibold shadow-lg text-green-200">
-            Welcome to my website! I&#39am Kiko, a full-stack software developer and
+            Welcome to my website! I&apos;m Kiko, a full-stack software developer and
             a sustainability enthusiast. With over five years of experience in
-            the renewables industry, I am committed to developing digital tools
+            the renewables industry, I&apos;m committed to developing digital tools
             that make a positive impact on the world. As a problem solver and a
             collaborator, I bring technical expertise and real-world experience
             to every project I work on.
