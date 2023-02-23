@@ -120,6 +120,7 @@ export default function Home() {
                 <a
                   href="https://docs.google.com/document/d/1VIAWUF5wH1xBC-_EYzWocU_qi_4Ao64o/edit?usp=sharing&ouid=101142090938268679220&rtpof=true&sd=true"
                   target="_blank"
+                  rel="noreferrer"
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-lg ml-8 mr-3"
                 >
                   {" "}
@@ -142,6 +143,7 @@ export default function Home() {
               href="https://linkedin.com/in/kiko-nunez"
               className="hover:transform hover:scale-150"
               target="_blank"
+              rel="noreferrer"
             >
               <AiFillLinkedin />
             </a>
@@ -149,6 +151,7 @@ export default function Home() {
               href="https://github.com/kiko-nunez"
               className="hover:transform hover:scale-150"
               target="_blank"
+              rel="noreferrer"
             >
               <AiFillGithub />
             </a>
@@ -180,6 +183,7 @@ export default function Home() {
                 <a
                   href="https://kiko-nunez.github.io/anime-quote-generator/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <Image
                     alt=""
@@ -206,6 +210,7 @@ export default function Home() {
                 <a
                   href="https://open-source-apparel.herokuapp.com/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <Image
                     alt=""
@@ -228,7 +233,7 @@ export default function Home() {
             <div className="text-center shadow-lg p-10 rounded-xl my-10 basis-1/3 flex-1 dark:bg-teal-200 hover:transform hover:scale-110 border-4 border-black">
               <h3 className="text-3xl py-1">Cheezus Pizza</h3>
               <p className="text-xl py-2 leading-8 text-white-800">
-                <a href="https://cheezus.netlify.app" target="_blank">
+                <a href="https://cheezus.netlify.app" target="_blank" rel="noreferrer">
                   <Image
                     alt=""
                     src={project3}
@@ -250,7 +255,7 @@ export default function Home() {
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 basis-1/3 dark:bg-teal-200 hover:transform hover:scale-110 border-4 border-black">
               <h3 className="text-3xl py-1">PowerUp: EV Charging</h3>
               <p className="text-xl py-2 leading-8 text-white-800">
-                <a href="https://powerup.herokuapp.com/" target="_blank">
+                <a href="https://powerup.herokuapp.com/" target="_blank" rel="noreferrer">
                   <Image
                     alt=""
                     src={project4}
