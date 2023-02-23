@@ -2,13 +2,13 @@ import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Image from "next/image";
+import Link from "next/link";
 import pfp from "../public/pfp.png";
 import project1 from "../public/project1.png";
 import project2 from "../public/project2.png";
 import project3 from "../public/project3.png";
 import project4 from "../public/project4.png";
 import React, { useState } from "react";
-import { ToastProvider } from "@chakra-ui/react";
 import {
   FormErrorMessage,
   Textarea,
@@ -92,14 +92,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-white px=10 md:px-3 dark:text-teal-300 dark:bg-blue-900 text-blue-900">
-        <section className=" min-h-screen">
+      <main className="bg-white px=10 md:px-3 dark:text-teal-300 dark:bg-blue-900 text-blue-900 scroll-smooth">
+        <section id="home" className=" min-h-screen scroll-smooth">
           <nav className="py-5 px-3 mt-0 flex justify-between">
             <ul className="text-xl font-burtons mt-0 pl-3">
-              <li className="list-none flex ">Home</li>
-              <li className="list-none flex ">Projects</li>
-              <li className="list-none flex ">About Me</li>
-              <li className="list-none flex ">Contact</li>
+              <Link href="#home"><li className="list-none flex hover:border-blue-600 hover:transform hover:scale-150 hover:transition hover:duration-500">Home</li></Link>
+              <Link href="#projects"><li className="list-none flex hover:transform hover:scale-150 hover:transition hover:duration-500">Projects</li></Link>
+              <Link href="#about-me"><li className="list-none flex hover:transform hover:scale-150 hover:transition hover:duration-500">About Me</li></Link>
+              <Link href="#contact"><li className="list-none flex hover:transform hover:scale-150 hover:transition hover:duration-500">Contact</li></Link>
             </ul>
             <ul className="list-none flex items-center">
               <li>
@@ -146,7 +146,7 @@ export default function Home() {
             <Image alt="" src={pfp} layout="fill" />
           </div>
         </section>
-        <section className="font-burtons">
+        <section id="about-me" className="font-burtons">
           <h2 className="text-center text-4xl py-1 mt-4 ">About Me</h2>
           <p className="text-center text-2xl font-burtons font-semibold shadow-lg mx-5">
             Welcome to my website! I&apos;m Kiko, a full-stack software
@@ -158,9 +158,8 @@ export default function Home() {
           </p>
           <br></br>
         </section>
-
+        <section id="projects">
         <h2 className="text-center text-4xl py-1 font-burtons">My Projects</h2>
-        <section>
           <div className="lg:flex gap-10 dark:text-blue-900">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 lg:flex-wrap basis-1/3 dark:bg-teal-200 hover:transform hover:scale-110 border-4 border-black">
               <h3 className="text-3xl py-1">Project 1</h3>
@@ -230,7 +229,7 @@ export default function Home() {
               <p className="py-1">Description</p>
             </div>
           </div>
-          <section className="">
+          <section id="contact">
             <div className="border-4 border-black">
               {/* <h2 className="text-center text-4xl py-1 mt-4 ">Contact</h2> */}
               <Container>
