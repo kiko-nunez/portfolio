@@ -9,12 +9,7 @@ import project2 from "../public/project2.png";
 import project3 from "../public/project3.png";
 import project4 from "../public/project4.png";
 import React, { useState } from "react";
-import {
-  FormErrorMessage,
-  Textarea,
-  Text,
-  useToast,
-} from "@chakra-ui/react";
+import { FormErrorMessage, Textarea, Text, useToast } from "@chakra-ui/react";
 import {
   Container,
   FormControl,
@@ -24,7 +19,6 @@ import {
 } from "@chakra-ui/react";
 import { Input } from "@chakra-ui/react";
 import { sendContactForm } from "@/lib/api";
-
 
 const initValues = {
   name: "",
@@ -36,10 +30,9 @@ const initValues = {
 const initState = { values: initValues };
 
 export default function Home() {
-
   const [darkMode, setDarkMode] = useState(false);
 
-  const toast = useToast()
+  const toast = useToast();
 
   const [state, setState] = useState(initState);
 
@@ -83,7 +76,6 @@ export default function Home() {
     }
   };
 
-
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -95,11 +87,27 @@ export default function Home() {
       <main className="bg-white px=10 md:px-3 dark:text-teal-300 dark:bg-blue-900 text-blue-900 scroll-smooth">
         <section id="home" className=" min-h-screen scroll-smooth">
           <nav className="py-5 px-3 mt-0 flex justify-between">
-            <ul className="text-xl font-burtons mt-0 pl-3">
-              <Link href="#home"><li className="list-none flex hover:border-blue-600 hover:transform hover:scale-150 hover:transition hover:duration-500">Home</li></Link>
-              <Link href="#projects"><li className="list-none flex hover:transform hover:scale-150 hover:transition hover:duration-500">Projects</li></Link>
-              <Link href="#about-me"><li className="list-none flex hover:transform hover:scale-150 hover:transition hover:duration-500">About Me</li></Link>
-              <Link href="#contact"><li className="list-none flex hover:transform hover:scale-150 hover:transition hover:duration-500">Contact</li></Link>
+            <ul className="text-2xl font-burtons mt-0 pl-3">
+              <Link href="#home">
+                <li className="list-none flex hover:border-blue-600 hover:transform hover:scale-150 hover:transition hover:duration-500">
+                  Home
+                </li>
+              </Link>
+              <Link href="#projects">
+                <li className="list-none flex hover:transform hover:scale-150 hover:transition hover:duration-500">
+                  Projects
+                </li>
+              </Link>
+              <Link href="#about-me">
+                <li className="list-none flex hover:transform hover:scale-150 hover:transition hover:duration-500">
+                  About Me
+                </li>
+              </Link>
+              <Link href="#contact">
+                <li className="list-none flex hover:transform hover:scale-150 hover:transition hover:duration-500">
+                  Contact
+                </li>
+              </Link>
             </ul>
             <ul className="list-none flex items-center">
               <li>
@@ -110,7 +118,8 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://docs.google.com/document/d/1VIAWUF5wH1xBC-_EYzWocU_qi_4Ao64o/edit?usp=sharing&ouid=101142090938268679220&rtpof=true&sd=true"
+                  target="_blank"
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-lg ml-8 mr-3"
                 >
                   {" "}
@@ -132,12 +141,14 @@ export default function Home() {
             <a
               href="https://linkedin.com/in/kiko-nunez"
               className="hover:transform hover:scale-150"
+              target="_blank"
             >
               <AiFillLinkedin />
             </a>
             <a
               href="https://github.com/kiko-nunez"
               className="hover:transform hover:scale-150"
+              target="_blank"
             >
               <AiFillGithub />
             </a>
@@ -159,12 +170,17 @@ export default function Home() {
           <br></br>
         </section>
         <section id="projects">
-        <h2 className="text-center text-4xl py-1 font-burtons">My Projects</h2>
+          <h2 className="text-center text-4xl py-1 font-burtons">
+            My Projects
+          </h2>
           <div className="lg:flex gap-10 dark:text-blue-900">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 lg:flex-wrap basis-1/3 dark:bg-teal-200 hover:transform hover:scale-110 border-4 border-black">
-              <h3 className="text-3xl py-1">Project 1</h3>
+              <h3 className="text-3xl py-1">Anime Quote Generator</h3>
               <p className="text-xl py-2 leading-8 text-white-800">
-                <a href="https://kiko-nunez.github.io/anime-quote-generator/">
+                <a
+                  href="https://kiko-nunez.github.io/anime-quote-generator/"
+                  target="_blank"
+                >
                   <Image
                     alt=""
                     src={project1}
@@ -174,14 +190,23 @@ export default function Home() {
                   />
                 </a>
               </p>
-              <p className="py-1">Languages</p>
+              <p class="py-1 relative text-center mt-3">
+                <span className="absolute -top-5 left-1/2 transform -translate-x-1/2 font-bold">
+                  Technologies:
+                </span>
+                HTML5, CSS2, JavaScript, jQuery, Anime Quote API
+              </p>
+
               <p className="py-1">Description</p>
             </div>
 
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 lg:flex-wrap basis-1/3  dark:bg-teal-200 hover:transform hover:scale-110 border-4 border-black">
-              <h3 className="text-3xl py-1">Project 2</h3>
+              <h3 className="text-3xl py-1">Open Source Clothing</h3>
               <p className="text-xl py-2 leading-8 text-white-800">
-                <a href="https://open-source-apparel.herokuapp.com/">
+                <a
+                  href="https://open-source-apparel.herokuapp.com/"
+                  target="_blank"
+                >
                   <Image
                     alt=""
                     src={project2}
@@ -191,14 +216,19 @@ export default function Home() {
                   />
                 </a>
               </p>
-              <p className="py-1">Languages</p>
+              <p class="py-1 relative text-center mt-3">
+                <span className="absolute -top-5 left-1/2 transform -translate-x-1/2 font-bold">
+                  Technologies:
+                </span>
+                HTML5, CSS2, JavaScript, Node.js, Express, Basic Authentication, MongoDB, Mongoose, Heroku
+              </p>
               <p className="py-1">Description</p>
             </div>
 
             <div className="text-center shadow-lg p-10 rounded-xl my-10 basis-1/3 flex-1 dark:bg-teal-200 hover:transform hover:scale-110 border-4 border-black">
-              <h3 className="text-3xl py-1">Project 3</h3>
+              <h3 className="text-3xl py-1">Cheezus Pizza</h3>
               <p className="text-xl py-2 leading-8 text-white-800">
-                <a href="https://cheezus.netlify.app">
+                <a href="https://cheezus.netlify.app" target="_blank">
                   <Image
                     alt=""
                     src={project3}
@@ -208,14 +238,19 @@ export default function Home() {
                   />
                 </a>
               </p>
-              <p className="py-1">Languages</p>
+              <p class="py-1 relative text-center mt-3">
+                <span className="absolute -top-5 left-1/2 transform -translate-x-1/2 font-bold">
+                  Technologies:
+                </span>
+                HTML5, CSS2, JavaScript, Express, Express-Sessions, MongoDB, Mongoose, Heroku, Netlify
+              </p>
               <p className="py-1">Description</p>
             </div>
 
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 basis-1/3 dark:bg-teal-200 hover:transform hover:scale-110 border-4 border-black">
-              <h3 className="text-3xl py-1">Project 4</h3>
+              <h3 className="text-3xl py-1">PowerUp: EV Charging</h3>
               <p className="text-xl py-2 leading-8 text-white-800">
-                <a href="https://powerup.herokuapp.com/">
+                <a href="https://powerup.herokuapp.com/" target="_blank">
                   <Image
                     alt=""
                     src={project4}
@@ -225,7 +260,12 @@ export default function Home() {
                   />
                 </a>
               </p>
-              <p className="py-1">Languages</p>
+              <p class="py-1 relative text-center mt-3">
+                <span className="absolute -top-5 left-1/2 transform -translate-x-1/2 font-bold">
+                  Technologies:
+                </span>
+                HTML5, CSS2, JavaScript, Python, Django, PostgreSQL, Heroku, Materialize, Docker, Unit Testing
+              </p>
               <p className="py-1">Description</p>
             </div>
           </div>
