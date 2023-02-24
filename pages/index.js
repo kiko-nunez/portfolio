@@ -84,7 +84,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-white px=10 md:px-3 dark:text-teal-300 dark:bg-blue-900 text-blue-900 scroll-smooth">
+      <main className="bg-slate-300 px=10 md:px-3 dark:text-teal-300 dark:bg-blue-900 text-blue-900 scroll-smooth">
         <section id="home" className=" min-h-screen scroll-smooth">
           <nav className="py-5 px-3 mt-0 flex justify-between">
             <ul className="text-2xl font-burtons mt-0 pl-3">
@@ -173,7 +173,7 @@ export default function Home() {
           <br></br>
         </section>
         <section id="projects">
-          <h2 className="text-center text-4xl py-1 font-burtons">
+          <h2 className="text-center text-4xl py-1 font-burtons mt-5">
             My Projects
           </h2>
           <div className="lg:flex gap-10 dark:text-blue-900">
@@ -194,14 +194,18 @@ export default function Home() {
                   />
                 </a>
               </p>
-              <p class="py-1 relative text-center mt-3">
+              <p class="py-1 relative text-center mt-11">
                 <span className="absolute -top-5 left-1/2 transform -translate-x-1/2 font-bold">
                   Technologies:
                 </span>
                 HTML5, CSS2, JavaScript, jQuery, Anime Quote API
               </p>
-
-              <p className="py-1">Description</p>
+              <p className="py-1 relative text-center mt-11">
+                <span className="absolute -top-5 left-1/2 transform -translate-x-1/2 font-bold">
+                  Description:
+                </span>
+                Pick an anime character and get their quote! 
+              </p>
             </div>
 
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 lg:flex-wrap basis-1/3  dark:bg-teal-200 hover:transform hover:scale-110 border-4 border-black">
@@ -221,13 +225,18 @@ export default function Home() {
                   />
                 </a>
               </p>
-              <p class="py-1 relative text-center mt-3">
+              <p class="py-1 relative text-center mt-11">
                 <span className="absolute -top-5 left-1/2 transform -translate-x-1/2 font-bold">
                   Technologies:
                 </span>
                 HTML5, CSS2, JavaScript, Node.js, Express, Basic Authentication, MongoDB, Mongoose, Heroku
               </p>
-              <p className="py-1">Description</p>
+              <p className="py-1 relative text-center mt-11">
+                <span className="absolute -top-5 left-1/2 transform -translate-x-1/2 font-bold">
+                  Description:
+                </span>
+                Storefront app for selling clothing products, allowing sellers to build their brand
+              </p>
             </div>
 
             <div className="text-center shadow-lg p-10 rounded-xl my-10 basis-1/3 flex-1 dark:bg-teal-200 hover:transform hover:scale-110 border-4 border-black">
@@ -243,13 +252,18 @@ export default function Home() {
                   />
                 </a>
               </p>
-              <p class="py-1 relative text-center mt-3">
+              <p className="py-1 relative text-center mt-11">
                 <span className="absolute -top-5 left-1/2 transform -translate-x-1/2 font-bold">
                   Technologies:
                 </span>
                 HTML5, CSS2, JavaScript, Express, Express-Sessions, MongoDB, Mongoose, Heroku, Netlify
               </p>
-              <p className="py-1">Description</p>
+              <p className="py-1 relative text-center mt-11">
+                <span className="absolute -top-5 left-1/2 transform -translate-x-1/2 font-bold">
+                  Description:
+                </span>
+                Pizza delivery app that focuses on connecting customers to local pizza shops
+              </p>
             </div>
 
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 basis-1/3 dark:bg-teal-200 hover:transform hover:scale-110 border-4 border-black">
@@ -265,19 +279,24 @@ export default function Home() {
                   />
                 </a>
               </p>
-              <p class="py-1 relative text-center mt-3">
+              <p className="py-1 relative text-center mt-11">
                 <span className="absolute -top-5 left-1/2 transform -translate-x-1/2 font-bold">
                   Technologies:
                 </span>
                 HTML5, CSS2, JavaScript, Python, Django, PostgreSQL, Heroku, Materialize, Docker, Unit Testing
               </p>
-              <p className="py-1">Description</p>
+              <p className="py-1 relative text-center mt-11">
+                <span className="absolute -top-5 left-1/2 transform -translate-x-1/2 font-bold">
+                  Description:
+                </span>
+                Web app to find local EV charging stations
+              </p>
             </div>
           </div>
           <section id="contact">
             <div className="border-4 border-black">
               {/* <h2 className="text-center text-4xl py-1 mt-4 ">Contact</h2> */}
-              <Container>
+              <Container className="">
                 <Heading className="text-center text-4xl mt-4">Contact</Heading>
                 {error && (
                   <Text
@@ -304,7 +323,7 @@ export default function Home() {
                     errorBorderColor="red.300"
                     onChange={handleChange}
                     onBlur={onBlur}
-                    className="appearance-none border-rounded w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline"
+                    className=" text-white appearance-none border-rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
                   />
                   <FormErrorMessage>Required</FormErrorMessage>
                 </FormControl>
@@ -323,7 +342,7 @@ export default function Home() {
                     value={values.email}
                     onChange={handleChange}
                     onBlur={onBlur}
-                    className="appearance-none border-rounded w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline"
+                    className="text-white appearance-none border-rounded w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline"
                   />
                   <FormErrorMessage>Required</FormErrorMessage>
                 </FormControl>
@@ -342,7 +361,7 @@ export default function Home() {
                     value={values.subject}
                     onChange={handleChange}
                     onBlur={onBlur}
-                    className="appearance-none border-rounded w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline"
+                    className="text-white appearance-none border-rounded w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline"
                   />
                   <FormErrorMessage>Required</FormErrorMessage>
                 </FormControl>
@@ -362,7 +381,7 @@ export default function Home() {
                     value={values.message}
                     onChange={handleChange}
                     onBlur={onBlur}
-                    className="appearance-none border-rounded w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline"
+                    className="text-white appearance-none border-rounded w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline"
                   />
                   <FormErrorMessage>Required</FormErrorMessage>
                 </FormControl>
@@ -385,66 +404,6 @@ export default function Home() {
                   </Button>
                 </div>
               </Container>
-              {/* <form className="max-w-lg mx-auto p-4">
-                <div className="mb-4">
-                  <label
-                    className="block text-white-700 font-bold mb-2"
-                    htmlFor="name"
-                  >
-                    Name
-                  </label>
-                  <input
-                    className="appearance-none border rounded w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline"
-                    id="name"
-                    type="text"
-                    placeholder="Enter your name"
-                    name="fullname"
-                  />
-                </div>
-                <div className="mb-4">
-                  <label
-                    className="block text-white-700 font-bold mb-2"
-                    htmlFor="email"
-                  >
-                    Email
-                  </label>
-                  <input
-                    className="appearance-none border rounded w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline"
-                    id="email"
-                    type="email"
-                    name="email"
-                    placeholder="Enter your email address"
-                  />
-                </div>
-                <div className="mb-4">
-                  <label
-                    className="block text-white-700 font-bold mb-2"
-                    htmlFor="message"
-                  >
-                    Message
-                  </label>
-                  <input
-                    type="text"
-                    name="subject"
-                    onChange={(e) => {
-                      setSubject(e.target.value);
-                    }}
-                    className="appearance-none border rounded w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline"
-                  />
-                  <textarea
-                    className="appearance-none border rounded w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline"
-                    id="message"
-                    placeholder="Enter your message"
-                    name="message"
-                  ></textarea>
-                </div>
-                <div className="flex items-center justify-center">
-                  <button
-                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                    type="submit"
-                  ></button>
-                </div>
-              </form> */}
             </div>
           </section>
         </section>
