@@ -118,7 +118,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  href="https://docs.google.com/document/d/196UOBLRLxCxS4K1hpVF-CCLFa6CHeq2X/edit?usp=sharing&ouid=101142090938268679220&rtpof=true&sd=true"
+                  href="https://docs.google.com/document/d/1UoiaLdnOf2LVy0zSKsiAKsLBnmXxvVEi/edit?usp=sharing&ouid=101142090938268679220&rtpof=true&sd=true"
                   target="_blank"
                   rel="noreferrer"
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-lg ml-8 mr-3"
